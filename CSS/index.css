@@ -1,0 +1,45 @@
+.tituloH{
+    background-color: #0A91AB;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+#menu{
+    display: flex;
+    background-color: #FFC045;
+    position: sticky;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+.center {
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#gameLogo{
+    width: 200px;
+}
+#Videojuegos {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.cadaJuego{
+    border: 1px solid #FFC045;
+    border-style: dashed;
+    width: 30%;
+    height: 350px;
+    margin: 1%;
+    padding-left: 1%;
+}
+aside{
+    background-color: #8A8070;
+
+}
