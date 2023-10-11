@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>ç
-    
+  <head>
     <meta charset="UTF-8">
     <title>Pràctica HTML i CSS</title>
     <link rel="shortcut icon" type="image/ico" href="images/github-11-64.ico" />
@@ -9,73 +8,90 @@
   </head>
   <body>
     <header>
-        <div class="center tituloH">
-            <div>
-              <img id="gameLogo" src="images/signal-3655575_640.png" alt="">
-            </div>
-            <div id="menu">
-              <nav class="center">
-                <a href="">MO4PLAY</a>
-                <a href="">MO4PLAY</a>
-                <a href="">MO4PLAY</a>
-                <a href="">MO4PLAY</a>
-              </nav>
-            </div>
-          </div>
+      <div class="center tituloH">
+        <div class="textoConLogo">
+            <h3>M4 PLAY</h3>
+            <img id="imagenMandito" src="images/signal-3655575_640.png" alt="">
+        </div>
+        <div id="menuDiv">
+          <menu>
+            <nav class="center">
+              <a href="">MO4PLAY</a>
+              <a href="">MO4PLAY</a>
+              <a href="">MO4PLAY</a>
+              <a href="">MO4PLAY</a>
+            </nav>
+          </menu>
+        </div>
+      </div>
     </header>
     <h1>Videojuegos</h1>
-
-    <div id="Videojuegos" style="border: 1px solid black;">
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>Garry's Mod</h2>
-                <p>Garry's mod es un entorno que te permite jugar con el motor fisico Al contrario que en la mayoria de juego, no hay ...</p>
-                <p>más info</p>
-            </article>
-        </div>
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>The Binding of Isaac</h2>
-                <p>Cuando la madre de Isaac ...</p>
-                <p>más info</p>
-            </article>
-        </div>
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>The Binding of Isaac</h2>
-                <p>Cuando la madre de Isaac ...</p>
-                <p>más info</p>
-            </article>
-        </div>
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>The Binding of Isaac</h2>
-                <p>Cuando la madre de Isaac ...</p>
-                <p>más info</p>
-            </article>
-        </div>
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>The Binding of Isaac</h2>
-                <p>Cuando la madre de Isaac ...</p>
-                <p>más info</p>
-            </article>
-        </div>
-        <div class="cadaJuego">
-            <article>
-                <header>Foto</header>
-                <h2>The Binding of Isaac</h2>
-                <p>Cuando la madre de Isaac ...</p>
-                <p>más info</p>
-            </article>
-        </div>
+    <div id="Videojuegos">
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">Garry's Mod</h2>
+          <p class="textoCadaJuego">Garry's mod es un entorno que te permite jugar con el motor fisico Al contrario que en la mayoria de juego, no hay ...</p>
+          <p>más info</p>
+        </article>
+      </div>
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">The Binding of Isaac</h2>
+          <p class="textoCadaJuego">Cuando la madre de Isaac ...</p>
+          <p>más info</p>
+        </article>
+      </div>
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">The Binding of Isaac</h2>
+          <p class="textoCadaJuego">Cuando la madre de Isaac ...</p>
+          <p>más info</p>
+        </article>
+      </div>
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">The Binding of Isaac</h2>
+          <p class="textoCadaJuego">Cuando la madre de Isaac ...</p>
+          <p>más info</p>
+        </article>
+      </div>
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">The Binding of Isaac</h2>
+          <p class="textoCadaJuego">Cuando la madre de Isaac ...</p>
+          <p>más info</p>
+        </article>
+      </div>
+      <div class="cadaJuego">
+        <article>
+          <header>
+            <img class="imageHeader" src="images/garry-s-mod.jpeg" alt="">
+          </header>
+          <h2 class="textoCadaJuego">The Binding of Isaac</h2>
+          <p class="textoCadaJuego">Cuando la madre de Isaac ...</p>
+          <div class="masInfo">
+            <p>más info</p>
+          </div>
+        </article>
+      </div>
     </div>
-    <aside>
+    <div class="Noticias">
+      <aside>
         <h2>Trucos</h2>
         <h3>GTA</h3>
         <p>Truco GTA para aparecer barcos 302-55-050</p>
@@ -85,6 +101,7 @@
         <p>Cómo conseguir todos los trofeos</p>
         <h3>Stray</h3>
         <p>Walkthrough</p>
-    </aside>
+      </aside>
+    </div>
   </body>
 </html>
