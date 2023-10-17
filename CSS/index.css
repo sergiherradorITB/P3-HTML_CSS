@@ -1,12 +1,12 @@
 html, body {
     min-height: 100%;
-    height: fit-content;
     margin: 0;
 }
 
 #headerPrincipal {
     position: sticky;
-    top: 20px;
+    top: 0;
+    z-index:100;
 }
 h3{
     margin: 0;
@@ -83,9 +83,23 @@ nav a {
     display: flex;
     flex-direction: column;
     height: 100;
-
 }
-
+.cadaJuegoLista {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #FFC045;
+    border-style: dashed;
+    width: 100%;
+    max-height: 20vh;
+    margin: 1%;
+    border-radius: 5px;
+    position: relative;
+}
+.cadaJuegoLista article {
+    display: flex;
+    flex-direction: column;
+    height: 100;
+}
 .textoCadaJuego {
     margin-left: 2%;
 }
