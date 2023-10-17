@@ -2,7 +2,6 @@ html, body {
     min-height: 100%;
     margin: 0;
 }
-
 #headerPrincipal {
     position: sticky;
     top: 0;
@@ -21,18 +20,44 @@ h3{
 .tituloMando {
     padding: 1%;
 }
-
 #menuDiv {
-    margin-top: 3%;
-    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
     display: flex;
     background-color: #FFC045;
     justify-content: center;
     text-align: center;
     vertical-align: middle;
 }
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Maven';
+    src: url('../fonts/static/MavenPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+h2, h3, p {
+    font-family: 'Maven';
+}
+menu {
+    width: 100%;
+}
 nav a {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-size: larger;
+    margin-left: 1%;
+    color: black;
+}
+nav a:hover {
+    color: #0A91AB;
+   /* Cambia el color del texto al pasar el ratón sobre el enlace */
 }
 .headerColor {
     color: #0A91AB;
@@ -42,23 +67,24 @@ nav a {
     text-align: center;
     vertical-align: middle;
 }
-  
 .textoConLogo {
     text-align: center;
     justify-content: center;
+    font-size: x-large;
 }
-#imagenMandito{
-    width: 5%;
+#Logo{
+    width: 15%;
 }
 .textoEncimaLogo{
     margin-top: 5%;
 }
-#videojuegosHeader {
-    margin-left: 1%;
+#videojuegosHeader{
     color: #0A91AB;
+    margin-left: 1%;
 }
 #Videojuegos {
     width: 99%;
+    height: 120%;
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -66,19 +92,17 @@ nav a {
     margin-left: 1%;
     justify-content: space-evenly;
 }
-
 .cadaJuego {
     display: flex;
     flex-direction: column;
     border: 3px solid #FFC045;
     border-style: dashed;
     width: 30%;
-    height: 54vh;
+    height: 42em;
     margin: 1%;
     border-radius: 5px;
     position: relative;
 }
-
 .cadaJuego article {
     display: flex;
     flex-direction: column;
@@ -107,7 +131,6 @@ nav a {
     width: 100%;
     height: 65%;
 }
-
 .imageHeader {
     width: 100%;
     height: 100%;
@@ -116,7 +139,6 @@ nav a {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
-
 .masInfo {
     display: flex;
     justify-content: center;
@@ -126,12 +148,7 @@ nav a {
     right: 1%;
     padding: 2%;
     background-color: #FFC045;
-
 }
-div aside h3 {
-    color: #FFC045
-}
-
 #asideTrucos {
     background-color: #0A90AB25;
     margin-left: 1%;
@@ -142,7 +159,18 @@ div aside h3 {
     border: 2px solid #8A8070;
     border-style: dotted;
 }
-  
+div aside h2 {
+    color: #0A91AB;
+    font-size: xx-large;
+}
+div aside h3 {
+    color: #FFC045 
+}
+div aside hr {
+    border: 1px solid gray;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+}
 .NoticiasTrucos {
     margin-top: 2%;
     display: flex;
@@ -154,7 +182,6 @@ div aside h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 .NoticiasHeader {
     width: 100%;
@@ -197,6 +224,9 @@ div aside h3 {
     width: 100%;
     height: 40%;
 }
+div article div p {
+    margin-left: 1%;
+}
 .containerImageNoticias {
     width: 100%;
     height: 59%;
@@ -206,6 +236,9 @@ div aside h3 {
 .imageNoticias {
     width: 100%;
     object-fit: cover;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-bottom: 0;
 }
 .top-right {
     position: absolute;
@@ -213,26 +246,24 @@ div aside h3 {
     top: 2.5%;
     right: 1%;
     background-color: #FFC045;
+    font-family: 'Maven';
 }
-  
 #ranking {
     width: 100%;
     height: auto;
 }
-
 .rankingPhoto {
     border-radius: 50%;
     text-align: center;
 }
 .rankingImage {
     border-radius: 50%;
-    width: 100px; 
-    height: 100px; 
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border: 3px solid #FFC045;
-    margin: 5px; 
+    margin: 5px;
 }
-  
 .rankingPositions {
     display: flex;
     justify-content: space-evenly;
@@ -245,29 +276,176 @@ footer {
     text-align: center;
     padding: 10px;
 }
-  
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-  
 .footer-top {
     display: flex;
     width: 50%;
     height: 70%;
 }
-  
 .footer-address {
     text-align: right;
     width: 50%;
     height: 70%;
 }
-  
 .footer-bottom {
     height: 30%;
     width: 100%;
     margin-top: -2%;
     text-align: center;
     vertical-align: bottom;
+}
+/* Estilos para los juegos */
+.cadaJuegoLista {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #FFC045;
+    border-style: dashed;
+    width: 95%;
+    margin: 1%;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+.imageContainerLista {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: flex-start;
+}
+.imageHeaderLista {
+    justify-content: flex-start;
+    height: 100%;
+    width: 85%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0;
+    object-fit: cover;
+}
+.cadaJuegoListaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 1%;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.textoCadaJuegoLista {
+    padding: 5%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+}
+.masInfoLista {
+    width: 100px;
+    padding: 10px;
+    background-color: #FFC045;
+    text-align: center;
+    margin: 1% 0;
+    align-self: center;
+}
+.cadaJuegoLista {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #FFC045;
+    border-style: dashed;
+    width: 95%;
+    max-height: 400px;
+    margin: 1%;
+    border-radius: 5px;
+    position: relative;
+    align-items: center;
+}
+.spiderman{
+    background-image:url(../images/spiderman2.png);
+}
+.valorant {
+    background-image:url(../images/valorant.avif);
+}
+.lol {
+    background-image:url(../images/LOL.jpeg);
+}
+.mario {
+    background-image:url(../images/mario-wonder.png);
+}
+.sonic {
+    background-image:url(../images/sonic.jpg);
+}
+.days {
+    background-image:url(../images/days-gone.png);
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+.pagination button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+.pagination button:hover {
+    background-color: #0056b3;
+}
+.page-numbers {
+    display: inline-block;
+}
+.page-numbers span {
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 4px;
+}
+.page-numbers span:hover {
+    background-color: #0056b3;
+}
+/* Estilos para contacto */
+.contact-form {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin: 2% 20%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form h2 {
+    color: #333;
+}
+.contact-form label, .contact-form input, .contact-form textarea {
+    display: block;
+    margin: 10px 0;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input[type="submit"] {
+    background: #FF6C00;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover {
+    background: #FF4500;
+}
+.mapcontainer{
+    margin-top: 5%;
 }
